@@ -4,6 +4,7 @@ const express = require("express");
 // App Setup
 const app = express();
 
+app.use(express.static('public'));
 // Middleware
 // Allow Express (our web framework) to render HTML templates and send them back to the client using a new function
 const handlebars = require("express-handlebars");
@@ -25,8 +26,6 @@ app.set("view engine", "handlebars");
 app.set("views", "./views");
 // MIDDLEWARE ENDS HERE
 
-
-
 // Routes
 // app.js
 // Require Libraries
@@ -34,9 +33,9 @@ app.set("views", "./views");
 // Require tenorjs near the top of the file
 const Tenor = require("tenorjs").client({
   // Replace with your own key
-  "Key": "AIzaSyBlJ5FnJRvT_r0FamXIFcyZ92raUW9xOyY", // https://tenor.com/developer/keyregistration
-  "Filter": "high", // "off", "low", "medium", "high", not case sensitive
-  "Locale": "en_US", // Your locale here, case-sensitivity depends on input
+  Key: "AIzaSyBlJ5FnJRvT_r0FamXIFcyZ92raUW9xOyY", // https://tenor.com/developer/keyregistration
+  Filter: "high", // "off", "low", "medium", "high", not case sensitive
+  Locale: "en_US", // Your locale here, case-sensitivity depends on input
 });
 
 // routes
