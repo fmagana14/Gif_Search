@@ -33,7 +33,7 @@ app.set("views", "./views");
 // Require tenorjs near the top of the file
 const Tenor = require("tenorjs").client({
   // Replace with your own key
-  Key: "AIzaSyBlJ5FnJRvT_r0FamXIFcyZ92raUW9xOyY", // https://tenor.com/developer/keyregistration
+  Key: "YOUR KEY GOES HERE", // https://tenor.com/developer/keyregistration
   Filter: "high", // "off", "low", "medium", "high", not case sensitive
   Locale: "en_US", // Your locale here, case-sensitivity depends on input
 });
